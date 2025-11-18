@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gallery</title>
+
+    <style>
+
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Heading */
+h1 {
+    color: rgb(0, 81, 255);
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+/* Gallery Container */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+/* Each Gallery Item */
+.gallery_img {
+    box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+/* Images */
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <center><h1>Gallery</h1></center>
+
+    <!--===== Image Gallery =====-->
+
+    <div class="gallery bd-grid">
+        <a href="images/horaa.png" class="gallery_img">
+            <img src="images/horaa.png" alt="">
+        </a>
+
+        <a href="images/e1.png" class="gallery_img">
+            <img src="images/horaa.png" alt="">
+        </a>
+
+        <a href="images/e2.png" class="gallery_img">
+            <img src="images/horaa.png" alt="">
+        </a>
+        
+        <a href="images/e3.png" class="gallery_img">
+            <img src="images/horaa.png" alt="">
+        </a>
+        
+        <a href="images/e4.png" class="gallery_img">
+            <img src="images/horaa.png" alt="">
+        </a>
+        
+        <a href="images/e4.png" class="gallery_img">
+            <img src="images/horaa.png" alt="">
+        </a>
+        
+        <a href="images/horaa_live.png" class="gallery_img">
+            <img src="images/horaa.png" alt="">
+        </a>
+        
+        <a href="images/horaa.png" class="gallery_img">
+            <img src="images/horaa.png" alt="">
+        </a>
+        
+        <a href="images/horaa.png" class="gallery_img">
+            <img src="images/horaa.png" alt="">
+        </a>
+    </div>
+</body>
+
+</html>
