@@ -2,21 +2,7 @@
    SHISHIR ADHIKARI — PORTFOLIO JS
    Handles: nav, scroll active, skill bars, EmailJS form, toast
 ===================================================== */
-// ===== DARK MODE =====
-const themeBtn = document.getElementById('theme-toggle');
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme === 'dark') {
-    document.documentElement.setAttribute('data-theme', 'dark');
-    document.querySelectorAll('.theme-toggle i').forEach(i => i.className = 'bx bx-sun');
-}
-themeBtn?.addEventListener('click', () => {
-    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-    document.documentElement.setAttribute('data-theme', isDark ? 'light' : 'dark');
-    localStorage.setItem('theme', isDark ? 'light' : 'dark');
-    document.querySelectorAll('.theme-toggle i').forEach(i => {
-        i.className = isDark ? 'bx bx-moon' : 'bx bx-sun';
-    });
-});
+
 /* ---- EmailJS config ----
    Steps to activate the contact form:
    1. Go to https://www.emailjs.com and create a free account
